@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/hello
+    destination: /ec2-user/home/hello
 hooks:
   ApplicationStart:
     - location: runas.sh
