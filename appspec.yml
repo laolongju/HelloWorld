@@ -2,7 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: ./HelloWorldService-1.0-SNAPSHOT.jar
-    destination: /tmp
+    destination: /ec2-user/home/hello
+  - source: ./runas.sh
+    destination: /ec2-user/home/hello
 hooks:
   ApplicationStart:
     - location: runas.sh
