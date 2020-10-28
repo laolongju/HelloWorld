@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: ./HelloWorldService-1.0-SNAPSHOT
     destination: /ec2-user/home/hello
 hooks:
   ApplicationStart:
