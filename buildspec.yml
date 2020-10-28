@@ -11,6 +11,11 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+cache:
+  paths:
+    - '/root/.m2/**/*'
+    - '/root/.npm/**/*'
+    - 'build/**/*'
 artifacts:
   files:
     - target/HelloWorldService-1.0-SNAPSHOT.jar
