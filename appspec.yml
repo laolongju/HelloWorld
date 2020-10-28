@@ -5,5 +5,5 @@ files:
     destination: /tmp
 hooks:
   ApplicationStart:
-    - location: runapp.sh
+    - location: runas.sh
       runas: ec2-user
