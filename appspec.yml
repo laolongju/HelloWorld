@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: ./HelloWorldService-1.0-SNAPSHOT
-    destination: /ec2-user/home/hello
+  - source: ./
+    destination: /home/ec2-user/hello
 hooks:
   ApplicationStart:
     - location: runas.sh
