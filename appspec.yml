@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: ./HelloWorldService-1.0-SNAPSHOT.jar
+    destination: /tmp
+hooks:
+  ApplicationStart:
+    - location: runapp.sh
+      runas: ec2-user
