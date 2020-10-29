@@ -20,5 +20,5 @@ artifacts:
   files:
     - target/HelloWorldService-1.0-SNAPSHOT.jar
     - appspec.yml
-    - scripts
-  discard-paths: yes
+    - scripts/*
+  discard-paths: no
