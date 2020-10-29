@@ -20,5 +20,5 @@ artifacts:
   files:
     - target/HelloWorldService-1.0-SNAPSHOT.jar
     - appspec.yml
-    - runas.sh
+    - scripts
   discard-paths: yes
