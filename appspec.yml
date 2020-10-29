@@ -4,9 +4,6 @@ files:
   - source: ./
     destination: /home/ec2-user/hello
 hooks:
-  AfterInstall:
-    - location: stopapp.sh
-    - runas: ec2-user
   ApplicationStart:
     - location: runapp.sh
       runas: ec2-user
