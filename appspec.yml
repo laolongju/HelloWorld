@@ -5,5 +5,5 @@ files:
     destination: /home/ec2-user/hello
 hooks:
   ApplicationStart:
-    - location: runas.sh
+    - location: runapp.sh
       runas: ec2-user
