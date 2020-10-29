@@ -8,4 +8,3 @@ then
    else
 	    echo 'Application is already stopped...'
 fi
-rm -rf /home/ec2-user/hello
