@@ -15,7 +15,7 @@ public class HelloWorldController {
 		try {
 			System.out.print("Got hello request from "+name);
 			String localip=InetAddress.getLocalHost().getHostAddress();
-			return "Hello, "+name+"!, you are visiting "+localip+" V3 version";
+			return "Hello, "+name+"!, you are visiting "+localip+" V4 version";
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
