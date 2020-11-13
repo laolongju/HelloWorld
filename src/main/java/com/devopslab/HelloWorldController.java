@@ -23,5 +23,18 @@ public class HelloWorldController {
 		return "Hello, "+name+"!";
 		
 	}
-	
+
+	@RequestMapping(value = "/echo", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public String echo(String name) {
+		try {
+			System.out.print("Got hello request from "+name);
+			String localip=InetAddress.getLocalHost().getHostAddress();
+			return "echo, "+name+"!, you are visiting "+localip+" V10 version";
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "Hello, "+name+"!";
+		
+	}
 }
